@@ -13,7 +13,7 @@ RUN bash ~/anaconda3.sh -b -p /usr/local/anaconda3 \
                    && rm ~/anaconda3.sh
 ENV PATH /usr/local/anaconda3/bin:$PATH
 # update repo
-RUN sh -c echo -e "y\n" | conda update conda
+#RUN sh -c echo -e "y\n" | conda update conda
 RUN pip install --upgrade pip
 # install tensorflow
 #RUN pip install --upgrade tensorflow
