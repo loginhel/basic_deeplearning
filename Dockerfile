@@ -18,3 +18,5 @@ RUN pip install --upgrade pip
 # install tensorflow
 #RUN pip install --upgrade tensorflow
 RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ tensorflow==1.12.0
+# solve import warning
+RUN pip install --upgrade h5py
